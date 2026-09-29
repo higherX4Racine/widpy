@@ -1,2 +1,2 @@
 # widpy
-Convert public WI DPI data into a SLDS-esque database
+Parse WISEDash Public data files into a local database of school outcomes
