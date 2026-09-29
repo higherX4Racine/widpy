@@ -21,4 +21,5 @@ class District(Agency, BaseModel):
     schools: list[School]
         the schools that belong to this district
     """
-    schools: Mapped[Optional[list["School"]]] = relationship(back_populates="district")
+    schools: Mapped[Optional[list["School"]]] = relationship(back_populates="district",
+                                                             default_factory=list)
